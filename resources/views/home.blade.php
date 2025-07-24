@@ -97,7 +97,7 @@
                 <!-- Image Content -->
                 <div class="relative">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                        <img src="{{ asset('images/pemandangan-sawah-pematang.jpg') }}"
+                        <img src="{{ asset('images/pemandanganpematangpanjang.jpg') }}"
                             alt="Pemandangan Sawah dan Pematang di Nagari Pematang Panjang"
                             class="w-full h-96 object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -237,7 +237,7 @@
                     </a>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     @foreach ($umkms as $umkm)
                         <div
                             class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border hover:-translate-y-2 group">

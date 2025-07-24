@@ -15,7 +15,6 @@
 
     <div class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Informasi Lokasi -->
             <div class="bg-white rounded-lg shadow-md p-8 mb-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
@@ -96,7 +95,6 @@
                 </div>
             </div>
 
-            <!-- Peta Interaktif -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
                 <div class="p-6 border-b border-gray-200">
                     <h2 class="text-2xl font-bold text-gray-900">Peta Interaktif</h2>
@@ -104,7 +102,6 @@
                 </div>
                 <div class="relative">
                     <div id="map" class="w-full h-96 bg-gray-100">
-                        <!-- Peta akan dimuat di sini -->
                     </div>
                     <div id="map-loading" class="absolute inset-0 flex items-center justify-center bg-gray-100">
                         <div class="text-center">
@@ -116,7 +113,6 @@
                 </div>
             </div>
 
-            <!-- Statistik Wilayah -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 <div class="bg-white rounded-lg shadow-md p-6 text-center">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -172,88 +168,26 @@
         </div>
     </div>
 
-    <!-- Script untuk peta -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoCcT7hC0hBH6Fk3z0oJ+cK3FzT7B+jJ1xS7k5A=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJAE3zQeSgNoJ9FNQAIvB+vunQofE=" crossorigin=""></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Simulasi loading peta
-            setTimeout(function() {
-                const mapElement = document.getElementById('map');
-                const loadingElement = document.getElementById('map-loading');
+            // Sembunyikan loading
+            document.getElementById('map-loading').style.display = 'none';
 
-                // Sembunyikan loading
-                loadingElement.style.display = 'none';
+            // Inisialisasi peta Leaflet
+            const map = L.map('map').setView([-0.7006, 100.97753], 14); // Koordinat Nagari Pematang Panjang
 
-                // Tampilkan peta placeholder
-                mapElement.innerHTML = `
-            <div class="h-full flex items-center justify-center bg-gradient-to-br from-green-100 to-blue-100">
-                <div class="text-center p-8">
-                    <svg class="w-16 h-16 text-green-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                    </svg>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Nagari Pematang Panjang</h3>
-                    <p class="text-gray-600 mb-4">Kecamatan Sijunjung, Kabupaten Sijunjung</p>
-                    <div class="bg-white rounded-lg p-4 shadow-sm">
-                        <p class="text-sm text-gray-700 mb-2">
-                            <strong>Koordinat:</strong> 0°43'45" LS, 101°12'30" BT
-                        </p>
-                        <p class="text-sm text-gray-700">
-                            <strong>Luas:</strong> 45,5 km² | <strong>Penduduk:</strong> 3.250 jiwa
-                        </p>
-                    </div>
-                    <p class="text-xs text-gray-500 mt-4">
-                        * Peta interaktif akan ditampilkan setelah Google Maps API dikonfigurasi
-                    </p>
-                </div>
-            </div>
-        `;
-            }, 2000);
-        });
-
-        // Contoh implementasi dengan Google Maps API (uncomment jika sudah ada API key)
-        /*
-            function initMap() {
-                const pematangPanjang = { lat: -0.7291666, lng: 101.2083333 };
-
-                const map = new google.maps.Map(document.getElementById("map"), {
-                    zoom: 14,
-                    center: pematangPanjang,
-                    mapTypeId: 'satellite'
-                });
-
-                const marker = new google.maps.Marker({
-                    position: pematangPanjang,
-                    map: map,
-                    title: "Nagari Pematang Panjang"
-                });
-
-                const infoWindow = new google.maps.InfoWindow({
-                    content: `
-        <div style="padding: 10px;">
-            <h3 style="margin: 0 0 10px 0;">Nagari Pematang Panjang</h3>
-            <p style="margin: 0;">Kecamatan Sijunjung<br>Kabupaten Sijunjung<br>Sumatera Barat</p>
-        </div>
-    `
-                });
-
-                marker.addListener("click", () => {
-                    infoWindow.open(map, marker);
-                });
-
-                document.getElementById('map-loading').style.display = 'none';
-            }
-            */
-
-        // Contoh implementasi dengan Leaflet.js (alternatif gratis)
-
-        function initLeafletMap() {
-            const map = L.map('map').setView([-0.7291666, 101.2083333], 14);
-
+            // Tambahkan tile layer OpenStreetMap
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '© OpenStreetMap contributors'
             }).addTo(map);
 
-            L.marker([-0.7291666, 101.2083333]).addTo(map)
+            // Tambahkan marker pada lokasi Nagari Pematang Panjang
+            L.marker([-0.7006, 100.97753]).addTo(map)
                 .bindPopup(`
                 <div style="text-align: center;">
                     <h3>Nagari Pematang Panjang</h3>
@@ -261,20 +195,6 @@
                 </div>
             `)
                 .openPopup();
-
-            document.getElementById('map-loading').style.display = 'none';
-        }
-
-        // Panggil fungsi setelah library Leaflet dimuat
-        initLeafletMap();
+        });
     </script>
-
-    <!-- Uncomment salah satu script di bawah untuk menggunakan peta -->
-    <!-- Google Maps API -->
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script> -->
-
-    <!-- Leaflet.js (Gratis) -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
 @endsection

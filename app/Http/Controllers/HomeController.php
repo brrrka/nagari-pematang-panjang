@@ -15,11 +15,11 @@ class HomeController extends Controller
         // Ambil data untuk homepage dengan default empty collection jika tidak ada
         $featuredUmkm = Umkm::where('is_active', true)
             ->latest()
-            ->take(6)
+            ->take(4)
             ->get();
 
         $recentGallery = Gallery::latest()
-            ->take(6)
+            ->take(3)
             ->get();
 
         $recentArticles = Article::where('is_published', true)

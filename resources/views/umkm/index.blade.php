@@ -16,7 +16,7 @@
     <div class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             @if ($umkms->count() > 0)
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     @foreach ($umkms as $umkm)
                         <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border">
                             @if ($umkm->gambar)
