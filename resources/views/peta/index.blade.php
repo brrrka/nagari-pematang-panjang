@@ -7,7 +7,7 @@
     <div class="bg-green-600 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Peta Nagari</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Peta <span class="text-yellow-300">Nagari</span></h1>
                 <p class="text-xl opacity-90">Lokasi dan Wilayah Nagari Pematang Panjang</p>
             </div>
         </div>
@@ -15,7 +15,7 @@
 
     <div class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8 border-b-4 border-transparent hover:border-yellow-400">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
                         <h2 class="text-2xl font-bold text-gray-900 mb-4">Informasi Lokasi</h2>
@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <svg class="w-5 h-5 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor"
+                                <svg class="w-5 h-5 text-yellow-600 mr-3 mt-1" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945"></path>
@@ -55,18 +55,18 @@
                                 </svg>
                                 <div>
                                     <h3 class="font-semibold text-gray-900">Luas Wilayah</h3>
-                                    <p class="text-gray-600">45,5 km² (4.550 Hektar)</p>
+                                    <p class="text-gray-600">2.775 HA</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
-                                <svg class="w-5 h-5 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor"
+                                <svg class="w-5 h-5 text-yellow-600 mr-3 mt-1" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
                                 </svg>
                                 <div>
                                     <h3 class="font-semibold text-gray-900">Ketinggian</h3>
-                                    <p class="text-gray-600">250 - 650 meter di atas permukaan laut</p>
+                                    <p class="text-gray-600">160 M</p>
                                 </div>
                             </div>
                         </div>
@@ -74,21 +74,21 @@
                     <div>
                         <h2 class="text-2xl font-bold text-gray-900 mb-4">Batas Wilayah</h2>
                         <div class="grid grid-cols-2 gap-4">
-                            <div class="text-center p-4 bg-red-50 rounded-lg">
+                            <div class="text-center p-4 bg-red-50 rounded-lg border-b-4 border-red-500">
                                 <h4 class="font-semibold text-red-800 mb-2">Utara</h4>
-                                <p class="text-red-700 text-sm">Nagari Tanjung Balik</p>
+                                <p class="text-red-700 text-sm">Nagari Muaro</p>
                             </div>
-                            <div class="text-center p-4 bg-blue-50 rounded-lg">
+                            <div class="text-center p-4 bg-blue-50 rounded-lg border-b-4 border-blue-500">
                                 <h4 class="font-semibold text-blue-800 mb-2">Selatan</h4>
-                                <p class="text-blue-700 text-sm">Nagari Sijunjung</p>
+                                <p class="text-blue-700 text-sm">Nagari Lalan</p>
                             </div>
-                            <div class="text-center p-4 bg-green-50 rounded-lg">
+                            <div class="text-center p-4 bg-green-50 rounded-lg border-b-4 border-green-500">
                                 <h4 class="font-semibold text-green-800 mb-2">Barat</h4>
-                                <p class="text-green-700 text-sm">Nagari Lubuk Tarok</p>
+                                <p class="text-green-700 text-sm">Nagari Kandang Baru, Nagari Koto Tuo</p>
                             </div>
-                            <div class="text-center p-4 bg-yellow-50 rounded-lg">
+                            <div class="text-center p-4 bg-yellow-50 rounded-lg border-b-4 border-yellow-500">
                                 <h4 class="font-semibold text-yellow-800 mb-2">Timur</h4>
-                                <p class="text-yellow-700 text-sm">Nagari Koto Baru</p>
+                                <p class="text-yellow-700 text-sm">Nagari Sijunjung</p>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                     <h2 class="text-2xl font-bold text-gray-900">Peta Interaktif</h2>
                     <p class="text-gray-600 mt-2">Jelajahi lokasi Nagari Pematang Panjang dan sekitarnya</p>
                 </div>
-                <div class="relative">
+                <div class="relative z-0"> {{-- Tambahkan z-0 di sini --}}
                     <div id="map" class="w-full h-96 bg-gray-100">
                     </div>
                     <div id="map-loading" class="absolute inset-0 flex items-center justify-center bg-gray-100">
@@ -114,7 +114,8 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                {{-- Kartu "Jumlah Penduduk" - tetap biru --}}
+                <div class="bg-white rounded-lg shadow-md p-6 text-center border-b-4 border-blue-500">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -123,11 +124,12 @@
                         </svg>
                     </div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-2">Jumlah Penduduk</h3>
-                    <p class="text-3xl font-bold text-blue-600">3.250</p>
+                    <p class="text-3xl font-bold text-blue-600">6938</p>
                     <p class="text-gray-600 text-sm">jiwa</p>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                {{-- Kartu "Jumlah KK" - tetap hijau --}}
+                <div class="bg-white rounded-lg shadow-md p-6 text-center border-b-4 border-green-500">
                     <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -135,11 +137,12 @@
                         </svg>
                     </div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-2">Jumlah KK</h3>
-                    <p class="text-3xl font-bold text-green-600">890</p>
+                    <p class="text-3xl font-bold text-green-600">2009</p>
                     <p class="text-gray-600 text-sm">kepala keluarga</p>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                {{-- Kartu "Jumlah Jorong" - diubah jadi dominan kuning --}}
+                <div class="bg-white rounded-lg shadow-md p-6 text-center border-b-4 border-yellow-500">
                     <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -148,11 +151,12 @@
                         </svg>
                     </div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-2">Jumlah Jorong</h3>
-                    <p class="text-3xl font-bold text-yellow-600">4</p>
+                    <p class="text-3xl font-bold text-yellow-600">11</p>
                     <p class="text-gray-600 text-sm">jorong</p>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                {{-- Kartu "Luas Wilayah" - tetap ungu --}}
+                <div class="bg-white rounded-lg shadow-md p-6 text-center border-b-4 border-purple-500">
                     <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -161,8 +165,8 @@
                         </svg>
                     </div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-2">Luas Wilayah</h3>
-                    <p class="text-3xl font-bold text-purple-600">45,5</p>
-                    <p class="text-gray-600 text-sm">km²</p>
+                    <p class="text-3xl font-bold text-purple-600">2.775</p>
+                    <p class="text-gray-600 text-sm">HA</p>
                 </div>
             </div>
         </div>
@@ -179,7 +183,8 @@
             document.getElementById('map-loading').style.display = 'none';
 
             // Inisialisasi peta Leaflet
-            const map = L.map('map').setView([-0.7006, 100.97753], 14); // Koordinat Nagari Pematang Panjang
+            // Sesuaikan zoom level atau koordinat jika diperlukan
+            const map = L.map('map').setView([-0.7006, 100.97753], 14);
 
             // Tambahkan tile layer OpenStreetMap
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -190,10 +195,10 @@
             L.marker([-0.7006, 100.97753]).addTo(map)
                 .bindPopup(`
                 <div style="text-align: center;">
-                    <h3>Nagari Pematang Panjang</h3>
+                    <h3 style="color: #FACC15; font-weight: bold;">Nagari Pematang Panjang</h3>
                     <p>Kecamatan Sijunjung<br>Kabupaten Sijunjung<br>Sumatera Barat</p>
                 </div>
-            `)
+                `)
                 .openPopup();
         });
     </script>

@@ -70,11 +70,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <a href="{{ route('umkm.index') }}"
-                        class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors {{ request()->routeIs('umkm.*') ? 'text-green-600 bg-green-50' : '' }}">
-                        UMKM
-                    </a>
                     <a href="{{ route('gallery.index') }}"
                         class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors {{ request()->routeIs('gallery.*') ? 'text-green-600 bg-green-50' : '' }}">
                         Galeri

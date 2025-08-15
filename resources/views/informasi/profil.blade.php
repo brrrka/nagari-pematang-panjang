@@ -7,7 +7,7 @@
     <div class="bg-green-600 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Profil Nagari</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Profil <span class="text-yellow-300">Nagari</span></h1>
                 <p class="text-xl opacity-90">Nagari Pematang Panjang</p>
             </div>
         </div>
@@ -16,9 +16,9 @@
     <div class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
-                <!-- Sidebar Navigation -->
                 <div class="lg:col-span-1">
-                    <div class="bg-white rounded-lg shadow-md p-6 sticky top-8">
+                    <div
+                        class="bg-white rounded-lg shadow-md p-6 sticky top-8 border-b-4 border-transparent hover:border-yellow-400">
                         <h3 class="text-lg font-semibold text-gray-900 mb-4">Menu Profil</h3>
                         <nav class="space-y-2">
                             <a href="#sejarah"
@@ -49,11 +49,10 @@
                     </div>
                 </div>
 
-                <!-- Main Content -->
                 <div class="lg:col-span-3 space-y-12">
 
-                    <!-- Profil Umum -->
-                    <section class="bg-white rounded-lg shadow-md p-8">
+                    <section
+                        class="bg-white rounded-lg shadow-md p-8 border-b-4 border-transparent hover:border-yellow-400">
                         <h2 class="text-3xl font-bold text-gray-900 mb-6">Profil Umum Nagari Pematang Panjang</h2>
 
                         <div class="prose max-w-none mb-8">
@@ -65,72 +64,57 @@
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <div class="bg-green-50 p-4 rounded-lg text-center">
+                            <div class="bg-green-50 p-4 rounded-lg text-center border-b-4 border-green-500">
                                 <h4 class="font-semibold text-green-800 mb-2">Luas Wilayah</h4>
-                                <p class="text-green-700 text-xl font-bold">45,5 km²</p>
+                                <p class="text-green-700 text-xl font-bold">2.775 HA</p>
                             </div>
-                            <div class="bg-blue-50 p-4 rounded-lg text-center">
-                                <h4 class="font-semibold text-blue-800 mb-2">Jumlah Penduduk</h4>
-                                <p class="text-blue-700 text-xl font-bold">3.250 jiwa</p>
+                            <div class="bg-yellow-50 p-4 rounded-lg text-center border-b-4 border-yellow-500">
+                                <h4 class="font-semibold text-yellow-800 mb-2">Jumlah Penduduk</h4>
+                                <p class="text-yellow-700 text-xl font-bold">6938 jiwa</p>
                             </div>
-                            <div class="bg-yellow-50 p-4 rounded-lg text-center">
-                                <h4 class="font-semibold text-yellow-800 mb-2">Jumlah KK</h4>
-                                <p class="text-yellow-700 text-xl font-bold">890 KK</p>
+                            <div class="bg-green-50 p-4 rounded-lg text-center border-b-4 border-green-500">
+                                <h4 class="font-semibold text-green-800 mb-2">Jumlah KK</h4>
+                                <p class="text-green-700 text-xl font-bold">2009 KK</p>
                             </div>
-                            <div class="bg-purple-50 p-4 rounded-lg text-center">
-                                <h4 class="font-semibold text-purple-800 mb-2">Jumlah Jorong</h4>
-                                <p class="text-purple-700 text-xl font-bold">4 Jorong</p>
+                            <div class="bg-yellow-50 p-4 rounded-lg text-center border-b-4 border-yellow-500">
+                                <h4 class="font-semibold text-yellow-800 mb-2">Jumlah Jorong</h4>
+                                <p class="text-yellow-700 text-xl font-bold">11 Jorong</p>
                             </div>
                         </div>
                     </section>
 
-                    <!-- Sejarah -->
-                    <section id="sejarah" class="bg-white rounded-lg shadow-md p-8">
+                    <section id="sejarah"
+                        class="bg-white rounded-lg shadow-md p-8 border-b-4 border-transparent hover:border-yellow-400">
                         <h2 class="text-3xl font-bold text-gray-900 mb-6">Sejarah</h2>
 
                         <div class="bg-green-50 border-l-4 border-green-600 p-6 mb-8">
                             <p class="text-green-800 italic">
-                                "Nama Pematang Panjang berasal dari kondisi geografis wilayah yang berupa dataran tinggi
-                                yang memanjang, menyerupai pematang sawah yang panjang."
+                                "Nagari Pematang Panjang berjarak 15 KM dari ibukota Kabupaten yang merupakan salah satu
+                                Nagari dalam kecamatan Sijunjung."
                             </p>
                         </div>
 
                         <div class="space-y-6">
                             <div>
-                                <h3 class="text-xl font-semibold text-gray-900 mb-3">Asal Usul Nama</h3>
-                                <p class="text-gray-600 leading-relaxed">
-                                    Nagari Pematang Panjang mendapat namanya dari kondisi geografis wilayah yang berupa
-                                    dataran tinggi yang memanjang. Kata "Pematang" dalam bahasa lokal merujuk pada tanah
-                                    yang lebih tinggi dari sekitarnya, sedangkan "Panjang" menggambarkan bentuk wilayah
-                                    yang memanjang dari utara ke selatan.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h3 class="text-xl font-semibold text-gray-900 mb-3">Periode Kerajaan Minangkabau</h3>
-                                <p class="text-gray-600 leading-relaxed">
-                                    Wilayah Pematang Panjang pada masa lampau merupakan bagian dari kerajaan Minangkabau.
-                                    Sistem pemerintahan menggunakan adat istiadat Minangkabau dengan struktur ninik mamak,
-                                    penghulu, dan datuk sebagai pemimpin masyarakat.
-                                </p>
-                            </div>
-
-                            <div class="bg-gray-50 p-6 rounded-lg">
-                                <h4 class="font-semibold text-gray-900 mb-3">Timeline Penting</h4>
-                                <ul class="space-y-2 text-gray-600">
-                                    <li><strong>Era Kerajaan:</strong> Bagian dari Kerajaan Minangkabau</li>
-                                    <li><strong>1900-1942:</strong> Masa kolonial Belanda</li>
-                                    <li><strong>1945:</strong> Menjadi bagian Republik Indonesia</li>
-                                    <li><strong>1979:</strong> Pembentukan sistem pemerintahan nagari modern</li>
-                                    <li><strong>2001:</strong> Implementasi otonomi daerah</li>
-                                    <li><strong>2010-sekarang:</strong> Era digitalisasi dan modernisasi</li>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-3">Sejarah Ringkas Nagari</h3>
+                                <ul class="list-disc pl-5 text-gray-600 leading-relaxed space-y-2">
+                                    <li>Nagari Pematang Panjang berjarak 15 KM dari ibukota Kabupaten yang merupakan salah
+                                        satu Nagari dalam kecamatan Sijunjung.</li>
+                                    <li>Sebelum kembali ke sistem Pemerintahan Nagari, Nagari Pematang Panjang merupakan
+                                        sistem Pemerintahan Desa.</li>
+                                    <li>Nagari Pematang Panjang ditetapkan dengan Perda Kabupaten Sawahlunto Sijunjung Tahun
+                                        2001.</li>
+                                    <li>Sebelum dimekarkan, Nagari terdiri dari 7 Jorong dan pada Tahun 2008 dimekarkan
+                                        menjadi 10 jorong.</li>
+                                    <li>Pada tahun 2013, salah satu Jorong dimekarkan, maka sampai saat ini menjadi 11
+                                        jorong, dan sekaligus ada perubahan nama jorong.</li>
                                 </ul>
                             </div>
                         </div>
                     </section>
 
-                    <!-- Batas Wilayah -->
-                    <section id="batas-wilayah" class="bg-white rounded-lg shadow-md p-8">
+                    <section id="batas-wilayah"
+                        class="bg-white rounded-lg shadow-md p-8 border-b-4 border-transparent hover:border-yellow-400">
                         <h2 class="text-3xl font-bold text-gray-900 mb-6">Batas Wilayah</h2>
 
                         <p class="text-gray-600 leading-relaxed mb-8">
@@ -148,7 +132,7 @@
                                     </svg>
                                     <h3 class="text-lg font-semibold text-red-800">Sebelah Utara</h3>
                                 </div>
-                                <p class="text-red-700">Berbatasan dengan Nagari Tanjung Balik</p>
+                                <p class="text-red-700">Nagari Muaro</p>
                             </div>
 
                             <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
@@ -160,7 +144,7 @@
                                     </svg>
                                     <h3 class="text-lg font-semibold text-blue-800">Sebelah Selatan</h3>
                                 </div>
-                                <p class="text-blue-700">Berbatasan dengan Nagari Sijunjung</p>
+                                <p class="text-blue-700">Nagari Lalan</p>
                             </div>
 
                             <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
@@ -172,7 +156,7 @@
                                     </svg>
                                     <h3 class="text-lg font-semibold text-green-800">Sebelah Barat</h3>
                                 </div>
-                                <p class="text-green-700">Berbatasan dengan Nagari Lubuk Tarok</p>
+                                <p class="text-green-700">Nagari Kandang Baru, Nagari Koto Tuo</p>
                             </div>
 
                             <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg">
@@ -184,31 +168,17 @@
                                     </svg>
                                     <h3 class="text-lg font-semibold text-yellow-800">Sebelah Timur</h3>
                                 </div>
-                                <p class="text-yellow-700">Berbatasan dengan Nagari Koto Baru</p>
-                            </div>
-                        </div>
-
-                        <div class="bg-gray-50 p-6 rounded-lg">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Koordinat Geografis</h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div>
-                                    <h4 class="font-semibold text-gray-900 mb-2">Lintang Selatan</h4>
-                                    <p class="text-gray-600">0°42'30" - 0°45'15" LS</p>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900 mb-2">Bujur Timur</h4>
-                                    <p class="text-gray-600">101°10'20" - 101°13'45" BT</p>
-                                </div>
+                                <p class="text-yellow-700">Nagari Sijunjung</p>
                             </div>
                         </div>
                     </section>
 
-                    <!-- Jorong -->
-                    <section id="jorong" class="bg-white rounded-lg shadow-md p-8">
+                    <section id="jorong"
+                        class="bg-white rounded-lg shadow-md p-8 border-b-4 border-transparent hover:border-yellow-400">
                         <h2 class="text-3xl font-bold text-gray-900 mb-6">Jorong</h2>
 
                         <p class="text-gray-600 leading-relaxed mb-8">
-                            Nagari Pematang Panjang terdiri dari 4 (empat) jorong sebagai pembagian wilayah
+                            Nagari Pematang Panjang terdiri dari 11 (sebelas) jorong sebagai pembagian wilayah
                             administratif terkecil. Setiap jorong memiliki karakteristik dan potensi yang unik
                             serta dipimpin oleh seorang Kepala Jorong.
                         </p>
@@ -216,100 +186,64 @@
                         <div class="space-y-6">
                             <div
                                 class="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-r-lg">
-                                <h3 class="text-xl font-semibold text-green-900 mb-4">Jorong Pematang Panjang Utara</h3>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                                    <div>
-                                        <h4 class="font-medium text-green-800 mb-2">Data Demografis</h4>
-                                        <ul class="text-green-700 text-sm space-y-1">
-                                            <li>Jumlah KK: ± 245 KK</li>
-                                            <li>Jumlah Penduduk: ± 890 jiwa</li>
-                                            <li>Luas Wilayah: ± 12,5 km²</li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-medium text-green-800 mb-2">Potensi Unggulan</h4>
-                                        <ul class="text-green-700 text-sm space-y-1">
-                                            <li>Pertanian padi dan palawija</li>
-                                            <li>Perkebunan kelapa sawit</li>
-                                            <li>Peternakan sapi dan kambing</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <h3 class="text-xl font-semibold text-green-900 mb-4">Jorong Koran</h3>
+                                <p class="text-green-700">Kepala Jorong: Mustaben</p>
                             </div>
-
-                            <div
-                                class="bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-blue-500 p-6 rounded-r-lg">
-                                <h3 class="text-xl font-semibold text-blue-900 mb-4">Jorong Pematang Panjang Selatan</h3>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                                    <div>
-                                        <h4 class="font-medium text-blue-800 mb-2">Data Demografis</h4>
-                                        <ul class="text-blue-700 text-sm space-y-1">
-                                            <li>Jumlah KK: ± 220 KK</li>
-                                            <li>Jumlah Penduduk: ± 795 jiwa</li>
-                                            <li>Luas Wilayah: ± 11,2 km²</li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-medium text-blue-800 mb-2">Potensi Unggulan</h4>
-                                        <ul class="text-blue-700 text-sm space-y-1">
-                                            <li>Perkebunan karet dan kopi</li>
-                                            <li>Industri rumah tangga</li>
-                                            <li>Kerajinan anyaman bambu</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div
                                 class="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-r-lg">
-                                <h3 class="text-xl font-semibold text-yellow-900 mb-4">Jorong Pematang Tengah</h3>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                                    <div>
-                                        <h4 class="font-medium text-yellow-800 mb-2">Data Demografis</h4>
-                                        <ul class="text-yellow-700 text-sm space-y-1">
-                                            <li>Jumlah KK: ± 210 KK</li>
-                                            <li>Jumlah Penduduk: ± 760 jiwa</li>
-                                            <li>Luas Wilayah: ± 10,8 km²</li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-medium text-yellow-800 mb-2">Potensi Unggulan</h4>
-                                        <ul class="text-yellow-700 text-sm space-y-1">
-                                            <li>Pusat pemerintahan nagari</li>
-                                            <li>Fasilitas pendidikan dan kesehatan</li>
-                                            <li>Perdagangan dan jasa</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <h3 class="text-xl font-semibold text-yellow-900 mb-4">Jorong Kambuik Koman</h3>
+                                <p class="text-yellow-700">Kepala Jorong: Erisman</p>
                             </div>
-
                             <div
-                                class="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-500 p-6 rounded-r-lg">
-                                <h3 class="text-xl font-semibold text-purple-900 mb-4">Jorong Lubuk Basung</h3>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                                    <div>
-                                        <h4 class="font-medium text-purple-800 mb-2">Data Demografis</h4>
-                                        <ul class="text-purple-700 text-sm space-y-1">
-                                            <li>Jumlah KK: ± 215 KK</li>
-                                            <li>Jumlah Penduduk: ± 805 jiwa</li>
-                                            <li>Luas Wilayah: ± 11,0 km²</li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-medium text-purple-800 mb-2">Potensi Unggulan</h4>
-                                        <ul class="text-purple-700 text-sm space-y-1">
-                                            <li>Wisata alam dan budaya</li>
-                                            <li>Perkebunan durian dan rambutan</li>
-                                            <li>Perikanan air tawar</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                class="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-r-lg">
+                                <h3 class="text-xl font-semibold text-green-900 mb-4">Jorong Koto Tangah</h3>
+                                <p class="text-green-700">Kepala Jorong: Wandri Eka Putra</p>
+                            </div>
+                            <div
+                                class="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-r-lg">
+                                <h3 class="text-xl font-semibold text-yellow-900 mb-4">Jorong Parak Gadang</h3>
+                                <p class="text-yellow-700">Kepala Jorong: Fani Akbar</p>
+                            </div>
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-r-lg">
+                                <h3 class="text-xl font-semibold text-green-900 mb-4">Jorong Pale</h3>
+                                <p class="text-green-700">Kepala Jorong: Dulmadi</p>
+                            </div>
+                            <div
+                                class="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-r-lg">
+                                <h3 class="text-xl font-semibold text-yellow-900 mb-4">Jorong Duri</h3>
+                                <p class="text-yellow-700">Kepala Jorong: Endri Junaidi</p>
+                            </div>
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-r-lg">
+                                <h3 class="text-xl font-semibold text-green-900 mb-4">Jorong Pondok Jago</h3>
+                                <p class="text-green-700">Kepala Jorong: Sardiman Edi</p>
+                            </div>
+                            <div
+                                class="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-r-lg">
+                                <h3 class="text-xl font-semibold text-yellow-900 mb-4">Jorong Kalumpang</h3>
+                                <p class="text-yellow-700">Kepala Jorong: Zul Abdissalam</p>
+                            </div>
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-r-lg">
+                                <h3 class="text-xl font-semibold text-green-900 mb-4">Jorong Koman Kacik</h3>
+                                <p class="text-green-700">Kepala Jorong: Yusril Junaidi</p>
+                            </div>
+                            <div
+                                class="bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-500 p-6 rounded-r-lg">
+                                <h3 class="text-xl font-semibold text-yellow-900 mb-4">Jorong Limau Sundai</h3>
+                                <p class="text-yellow-700">Kepala Jorong: Burman Idrus</p>
+                            </div>
+                            <div
+                                class="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-6 rounded-r-lg">
+                                <h3 class="text-xl font-semibold text-green-900 mb-4">Jorong Sitampung</h3>
+                                <p class="text-green-700">Kepala Jorong: Heriyanto</p>
                             </div>
                         </div>
                     </section>
 
-                    <!-- Kondisi Geografis -->
-                    <section id="kondisi-geografis" class="bg-white rounded-lg shadow-md p-8">
+                    <section id="kondisi-geografis"
+                        class="bg-white rounded-lg shadow-md p-8 border-b-4 border-transparent hover:border-yellow-400">
                         <h2 class="text-3xl font-bold text-gray-900 mb-6">Kondisi Geografis</h2>
 
                         <div class="space-y-8">
@@ -318,25 +252,25 @@
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                     <div class="bg-green-50 border border-green-200 p-4 rounded-lg text-center">
                                         <h4 class="font-semibold text-green-900 mb-2">Terendah</h4>
-                                        <p class="text-2xl font-bold text-green-600">250m</p>
+                                        <p class="text-2xl font-bold text-green-600">160M</p>
                                         <p class="text-green-700 text-sm">di atas permukaan laut</p>
                                     </div>
                                     <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-lg text-center">
-                                        <h4 class="font-semibold text-yellow-900 mb-2">Rata-rata</h4>
-                                        <p class="text-2xl font-bold text-yellow-600">420m</p>
-                                        <p class="text-yellow-700 text-sm">di atas permukaan laut</p>
+                                        <h4 class="font-semibold text-yellow-900 mb-2">Suhu Udara Rata-Rata</h4>
+                                        <p class="text-2xl font-bold text-yellow-600">30-36°C</p>
+                                        <p class="text-yellow-700 text-sm">rata-rata</p>
                                     </div>
                                     <div class="bg-red-50 border border-red-200 p-4 rounded-lg text-center">
-                                        <h4 class="font-semibold text-red-900 mb-2">Tertinggi</h4>
-                                        <p class="text-2xl font-bold text-red-600">650m</p>
-                                        <p class="text-red-700 text-sm">di atas permukaan laut</p>
+                                        <h4 class="font-semibold text-red-900 mb-2">Tofografi</h4>
+                                        <p class="text-2xl font-bold text-red-600">Dataran Rendah</p>
+                                        <p class="text-red-700 text-sm">Nagari Pematang Panjang</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div>
                                 <h3 class="text-xl font-semibold text-gray-900 mb-4">Iklim dan Cuaca</h3>
-                                <div class="bg-gray-50 p-6 rounded-lg">
+                                <div class="bg-gray-50 p-6 rounded-lg border-b-4 border-gray-400">
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
                                             <h4 class="font-semibold text-gray-900 mb-3">Tipe Iklim</h4>
@@ -370,7 +304,8 @@
                                                 <div>
                                                     <div class="flex justify-between mb-1">
                                                         <span class="text-sm text-gray-600">Curah Hujan Tahunan</span>
-                                                        <span class="text-sm font-medium text-gray-900">2.800mm</span>
+                                                        <span class="text-sm font-medium text-gray-900">Tidak tersedia
+                                                            spesifik</span>
                                                     </div>
                                                     <div class="w-full bg-gray-200 rounded-full h-2">
                                                         <div class="bg-blue-600 h-2 rounded-full" style="width: 85%">
@@ -385,15 +320,15 @@
                         </div>
                     </section>
 
-                    <!-- Kondisi Nagari -->
-                    <section id="kondisi-nagari" class="bg-white rounded-lg shadow-md p-8">
+                    <section id="kondisi-nagari"
+                        class="bg-white rounded-lg shadow-md p-8 border-b-4 border-transparent hover:border-yellow-400">
                         <h2 class="text-3xl font-bold text-gray-900 mb-6">Kondisi Nagari</h2>
 
                         <div class="space-y-8">
                             <div>
                                 <h3 class="text-xl font-semibold text-gray-900 mb-4">Fasilitas Umum</h3>
                                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                    <div class="bg-blue-50 p-4 rounded-lg text-center">
+                                    <div class="bg-blue-50 p-4 rounded-lg text-center border-b-4 border-blue-500">
                                         <svg class="w-8 h-8 text-blue-600 mx-auto mb-2" fill="none"
                                             stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -402,7 +337,7 @@
                                         </svg>
                                         <h4 class="font-semibold text-blue-900">Kantor Wali Nagari</h4>
                                     </div>
-                                    <div class="bg-green-50 p-4 rounded-lg text-center">
+                                    <div class="bg-green-50 p-4 rounded-lg text-center border-b-4 border-green-500">
                                         <svg class="w-8 h-8 text-green-600 mx-auto mb-2" fill="none"
                                             stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -411,16 +346,16 @@
                                         </svg>
                                         <h4 class="font-semibold text-green-900">Sekolah</h4>
                                     </div>
-                                    <div class="bg-red-50 p-4 rounded-lg text-center">
+                                    <div class="bg-red-50 p-4 rounded-lg text-center border-b-4 border-red-500">
                                         <svg class="w-8 h-8 text-red-600 mx-auto mb-2" fill="none"
                                             stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
                                             </path>
                                         </svg>
-                                        <h4 class="font-semibold text-red-900">Puskesmas</h4>
+                                        <h4 class="font-semibold text-red-900">Puskesmas Pembantu</h4>
                                     </div>
-                                    <div class="bg-purple-50 p-4 rounded-lg text-center">
+                                    <div class="bg-purple-50 p-4 rounded-lg text-center border-b-4 border-purple-500">
                                         <svg class="w-8 h-8 text-purple-600 mx-auto mb-2" fill="none"
                                             stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -428,7 +363,7 @@
                                         </svg>
                                         <h4 class="font-semibold text-purple-900">Masjid</h4>
                                     </div>
-                                    <div class="bg-yellow-50 p-4 rounded-lg text-center">
+                                    <div class="bg-yellow-50 p-4 rounded-lg text-center border-b-4 border-yellow-500">
                                         <svg class="w-8 h-8 text-yellow-600 mx-auto mb-2" fill="none"
                                             stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -437,14 +372,14 @@
                                         </svg>
                                         <h4 class="font-semibold text-yellow-900">Pasar</h4>
                                     </div>
-                                    <div class="bg-indigo-50 p-4 rounded-lg text-center">
+                                    <div class="bg-indigo-50 p-4 rounded-lg text-center border-b-4 border-indigo-500">
                                         <svg class="w-8 h-8 text-indigo-600 mx-auto mb-2" fill="none"
                                             stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7">
                                             </path>
                                         </svg>
-                                        <h4 class="font-semibold text-indigo-900">Jalan & Jembatan</h4>
+                                        <h4 class="font-semibold text-indigo-900">Jalan Lintas Sumatera</h4>
                                     </div>
                                 </div>
                             </div>
@@ -452,22 +387,21 @@
                             <div>
                                 <h3 class="text-xl font-semibold text-gray-900 mb-4">Potensi Unggulan</h3>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div class="bg-green-50 p-6 rounded-lg">
+                                    <div class="bg-green-50 p-6 rounded-lg border-b-4 border-green-500">
                                         <h4 class="font-semibold text-green-900 mb-3">Sektor Pertanian</h4>
                                         <ul class="text-green-700 space-y-2">
-                                            <li>• Padi sawah dan ladang</li>
-                                            <li>• Jagung dan ubi kayu</li>
-                                            <li>• Sayuran dan cabai</li>
-                                            <li>• Kelapa sawit</li>
+                                            <li>• Tanaman pangan (Padi, Palawija)</li>
+                                            <li>• Perkebunan (Coklat/Kakao, Karet)</li>
                                         </ul>
                                     </div>
-                                    <div class="bg-blue-50 p-6 rounded-lg">
-                                        <h4 class="font-semibold text-blue-900 mb-3">Sektor UMKM</h4>
-                                        <ul class="text-blue-700 space-y-2">
-                                            <li>• Kerajinan tangan</li>
-                                            <li>• Makanan dan minuman</li>
-                                            <li>• Industri rumah tangga</li>
-                                            <li>• Perdagangan kecil</li>
+                                    <div class="bg-yellow-50 p-6 rounded-lg border-b-4 border-yellow-500">
+                                        <h4 class="font-semibold text-yellow-900 mb-3">Sub Sektor Kerajinan/Industri Kecil
+                                        </h4>
+                                        <ul class="text-yellow-700 space-y-2">
+                                            <li>• Tas Rajut</li>
+                                            <li>• Kue/Kerupuk</li>
+                                            <li>• Batu Bata</li>
+                                            <li>• Kue Ringan</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -475,82 +409,54 @@
                         </div>
                     </section>
 
-                    <!-- Topografi -->
-                    <section id="topografi" class="bg-white rounded-lg shadow-md p-8">
+                    <section id="topografi"
+                        class="bg-white rounded-lg shadow-md p-8 border-b-4 border-transparent hover:border-yellow-400">
                         <h2 class="text-3xl font-bold text-gray-900 mb-6">Topografi</h2>
 
                         <div class="space-y-8">
                             <div>
-                                <h3 class="text-xl font-semibold text-gray-900 mb-4">Bentuk Wilayah</h3>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-4">Gambaran Umum</h3>
                                 <p class="text-gray-600 leading-relaxed mb-6">
-                                    Nagari Pematang Panjang memiliki topografi yang bervariasi, dari dataran tinggi
-                                    hingga lembah yang subur. Bentuk wilayah yang memanjang dari utara ke selatan
-                                    menjadi ciri khas nagari ini.
+                                    Topografi adalah gambaran tentang tingkat kemiringan dan ketinggian tanah dari permukaan
+                                    laut.
+                                    Kondisi kemiringan tanah merupakan salah satu faktor yang sangat mempengaruhi kesesuaian
+                                    lahan untuk syarat tumbuh suatu tanaman, karena dengan kemiringan tanah yang cukup besar
+                                    akan
+                                    sangat mempengaruhi kontinuitas kesuburan tanah akibat daya rusak aliran air (tingkat
+                                    erosi)
+                                    terhadap permukaan tanah cukup tinggi.
                                 </p>
-
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                    <div class="text-center p-4 bg-brown-50 rounded-lg border">
-                                        <h4 class="font-semibold text-brown-800 mb-2">Dataran Tinggi</h4>
-                                        <p class="text-brown-600 text-sm">40% dari total wilayah</p>
-                                        <p class="text-brown-700 text-xs mt-1">Cocok untuk perkebunan</p>
-                                    </div>
-                                    <div class="text-center p-4 bg-green-50 rounded-lg border">
-                                        <h4 class="font-semibold text-green-800 mb-2">Lembah</h4>
-                                        <p class="text-green-600 text-sm">35% dari total wilayah</p>
-                                        <p class="text-green-700 text-xs mt-1">Area persawahan</p>
-                                    </div>
-                                    <div class="text-center p-4 bg-gray-50 rounded-lg border">
-                                        <h4 class="font-semibold text-gray-800 mb-2">Perbukitan</h4>
-                                        <p class="text-gray-600 text-sm">25% dari total wilayah</p>
-                                        <p class="text-gray-700 text-xs mt-1">Hutan dan konservasi</p>
-                                    </div>
-                                </div>
+                                <p class="text-gray-600 leading-relaxed mb-6">
+                                    Kondisi Nagari Pematang Panjang sangat potensial untuk dikembangkan sebagai lahan
+                                    pertanian dan
+                                    perkebunan, karena tingkat kesuburan lahan pertanian dan perkebunan di Nagari Pematang
+                                    Panjang
+                                    sangat baik. Disamping budidaya pertanian dan perkebunan rakyat yang dilakukan
+                                    masyarakat
+                                    masih tergolong tradisionil dan semi teknis juga masih ditemukan adanya lahan tidur yang
+                                    akan
+                                    ditanamai coklat (cocao) dan karet yang dapat ditingkatkan sebagai lahan produktif untuk
+                                    masa
+                                    yang akan datang.
+                                </p>
                             </div>
 
                             <div>
-                                <h3 class="text-xl font-semibold text-gray-900 mb-4">Jenis Tanah</h3>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-4">Jenis Tanah Dominan</h3>
                                 <div class="space-y-4">
                                     <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
-                                        <h4 class="font-semibold text-yellow-900 mb-2">Tanah Alluvial (60%)</h4>
+                                        <h4 class="font-semibold text-yellow-900 mb-2">Tanah Subur</h4>
                                         <p class="text-yellow-700 text-sm">
-                                            Dominan di area persawahan dan perkebunan, sangat subur untuk pertanian
+                                            Nagari Pematang Panjang memiliki tanah yang sangat baik dan subur, ideal untuk
+                                            pertanian.
                                         </p>
                                     </div>
-                                    <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
-                                        <h4 class="font-semibold text-red-900 mb-2">Tanah Latosol (25%)</h4>
-                                        <p class="text-red-700 text-sm">
-                                            Terdapat di daerah perbukitan, cocok untuk perkebunan karet dan kelapa sawit
+                                    <div class="bg-green-50 border border-green-200 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-green-900 mb-2">Potensi Lahan Tidur</h4>
+                                        <p class="text-green-700 text-sm">
+                                            Ditemukan lahan tidur yang berpotensi ditanami coklat (kakao) dan karet untuk
+                                            peningkatan produktivitas.
                                         </p>
-                                    </div>
-                                    <div class="bg-gray-50 border border-gray-200 p-4 rounded-lg">
-                                        <h4 class="font-semibold text-gray-900 mb-2">Tanah Podsolik (15%)</h4>
-                                        <p class="text-gray-700 text-sm">
-                                            Berada di lereng bukit, memerlukan pengelolaan khusus untuk pertanian
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <h3 class="text-xl font-semibold text-gray-900 mb-4">Sumber Daya Air</h3>
-                                <div class="bg-blue-50 p-6 rounded-lg">
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div>
-                                            <h4 class="font-semibold text-blue-900 mb-3">Sungai</h4>
-                                            <ul class="text-blue-700 space-y-1 text-sm">
-                                                <li>• Sungai Pematang (sungai utama)</li>
-                                                <li>• Sungai Lubuk Basung</li>
-                                                <li>• Beberapa anak sungai kecil</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h4 class="font-semibold text-blue-900 mb-3">Irigasi</h4>
-                                            <ul class="text-blue-700 space-y-1 text-sm">
-                                                <li>• Jaringan irigasi teknis</li>
-                                                <li>• Irigasi semi teknis</li>
-                                                <li>• Irigasi sederhana/tradisional</li>
-                                            </ul>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

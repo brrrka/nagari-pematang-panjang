@@ -4,10 +4,11 @@
 @section('title', 'Visi Misi')
 
 @section('content')
+    <!-- Hero Section -->
     <div class="bg-green-600 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Visi & Misi</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Visi & <span class="text-yellow-300">Misi</span></h1>
                 <p class="text-xl opacity-90">Arah dan Tujuan Pembangunan Nagari Pematang Panjang</p>
             </div>
         </div>
@@ -22,7 +23,8 @@
                     <div class="w-24 h-1 bg-green-600 mx-auto"></div>
                 </div>
 
-                <div class="bg-gradient-to-r from-green-50 to-green-100 rounded-2xl p-8 md:p-12 shadow-lg">
+                <div
+                    class="bg-gradient-to-r from-green-50 to-green-100 rounded-2xl p-8 md:p-12 shadow-lg border-b-4 border-transparent hover:border-yellow-400">
                     <div class="text-center">
                         <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,8 +36,8 @@
                             </svg>
                         </div>
                         <blockquote class="text-2xl md:text-3xl font-bold text-green-900 leading-relaxed">
-                            "Terwujudnya Nagari Pematang Panjang Yang Maju, Mandiri, Sejahtera, dan Berbudaya Berdasarkan
-                            Nilai-Nilai Islami dan Adat Minangkabau"
+                            "MEWUJUDKAN MASYARAKAT YANG MAJU PADA TATANAN PEMERINTAHAN, AGAMA DAN ADAT DI NAGARI PEMATANG
+                            PANJANG"
                         </blockquote>
                     </div>
                 </div>
@@ -49,97 +51,233 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-600">
+                    <!-- Misi cards - semua card tetap sama tapi hilangkan [cite_start] dan [cite: xxx] -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-600 hover:border-yellow-400">
                         <div class="flex items-start">
                             <div
                                 class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                                 <span class="text-green-600 font-bold text-xl">1</span>
                             </div>
                             <div>
-                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Pembangunan Infrastruktur</h3>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Menjalin Hubungan Baik dengan Semua
+                                    Pihak
+                                </h3>
                                 <p class="text-gray-600">
-                                    Meningkatkan kualitas infrastruktur dasar seperti jalan, jembatan, irigasi,
-                                    dan fasilitas umum untuk mendukung aktivitas masyarakat dan perekonomian nagari.
+                                    Menjalin hubungan dan komunikasi yang baik dengan BPN, Niniak Mamak, Ulama, Bundo
+                                    Kanduong, Pemuda dan semua pihak terkait untuk membangun nagari.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-600">
-                        <div class="flex items-start">
-                            <div
-                                class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                <span class="text-blue-600 font-bold text-xl">2</span>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Pengembangan Ekonomi</h3>
-                                <p class="text-gray-600">
-                                    Mengembangkan potensi ekonomi masyarakat melalui pemberdayaan UMKM,
-                                    koperasi, dan sektor pertanian untuk meningkatkan kesejahteraan rakyat.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-600">
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-600 hover:border-green-600">
                         <div class="flex items-start">
                             <div
                                 class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                <span class="text-yellow-600 font-bold text-xl">3</span>
+                                <span class="text-yellow-600 font-bold text-xl">2</span>
                             </div>
                             <div>
-                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Peningkatan SDM</h3>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Menjalankan Roda Pemerintahan Secara
+                                    Baik dan Benar
+                                </h3>
                                 <p class="text-gray-600">
-                                    Meningkatkan kualitas sumber daya manusia melalui pendidikan, pelatihan,
-                                    dan pembinaan untuk menciptakan generasi yang cerdas dan kompetitif.
+                                    Menjalankan roda pemerintahan secara baik dan benar.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-600">
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-600 hover:border-yellow-400">
                         <div class="flex items-start">
                             <div
-                                class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                <span class="text-purple-600 font-bold text-xl">4</span>
+                                class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-green-600 font-bold text-xl">3</span>
                             </div>
                             <div>
-                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Pelestarian Budaya</h3>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Berupaya Membangun Pasar Nagari</h3>
                                 <p class="text-gray-600">
-                                    Melestarikan dan mengembangkan nilai-nilai budaya adat Minangkabau
-                                    serta tradisi keagamaan sebagai identitas dan jati diri masyarakat.
+                                    Berupaya membangun pasar nagari.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-600">
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-600 hover:border-green-600">
                         <div class="flex items-start">
                             <div
-                                class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                <span class="text-red-600 font-bold text-xl">5</span>
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-yellow-600 font-bold text-xl">4</span>
                             </div>
                             <div>
-                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Tata Kelola Pemerintahan</h3>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Mengaktifkan BUMNAG dan KUD</h3>
                                 <p class="text-gray-600">
-                                    Mewujudkan tata kelola pemerintahan yang baik, bersih, dan transparan
-                                    dengan melibatkan partisipasi aktif masyarakat dalam pembangunan nagari.
+                                    Mengaktifkan Badan Usaha Milik Nagari (Bumnag) dan Koperasi Unit Desa (KUD).
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-indigo-600">
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-600 hover:border-yellow-400">
                         <div class="flex items-start">
                             <div
-                                class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                <span class="text-indigo-600 font-bold text-xl">6</span>
+                                class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-green-600 font-bold text-xl">5</span>
                             </div>
                             <div>
-                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Lingkungan Hidup</h3>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Bekerjasama dengan Guru Sekolah dan
+                                    Mushollah
+                                </h3>
                                 <p class="text-gray-600">
-                                    Menjaga kelestarian lingkungan hidup dan sumber daya alam untuk
-                                    keberlanjutan generasi mendatang melalui program-program ramah lingkungan.
+                                    Bekerjasama dengan para guru di sekolah dan mushollah.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-600 hover:border-green-600">
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-yellow-600 font-bold text-xl">6</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Melibatkan Putra/i Terbaik Nagari</h3>
+                                <p class="text-gray-600">
+                                    Melibatkan Putra putri terbaik nagari, seperti anggota DPRD, Perantau, Pengusaha, tokoh
+                                    masyarakat dan anak nagari yang bekerja dikantor kantor pemerintahan di Kabupaten
+                                    Sijunjung untuk membangun nagari.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-600 hover:border-yellow-400">
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-green-600 font-bold text-xl">7</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Membangun Balai Nikah / Ruang
+                                    Konsultasi Agama dan Surau Adat
+                                </h3>
+                                <p class="text-gray-600">
+                                    Membangun Balai nikah atau ruang konsultasi agama dan surau adat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-600 hover:border-green-600">
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-yellow-600 font-bold text-xl">8</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Melaksanakan Penyelesaian Masalah
+                                    dengan 3 Norma
+                                </h3>
+                                <p class="text-gray-600">
+                                    Melaksanakan penyelesaian masalah secara maksimal dengan acuan 3 norma (Pemerintah,
+                                    Agama dan adat).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-600 hover:border-yellow-400">
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-green-600 font-bold text-xl">9</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Memperbaiki Sistem Jual Beli Tanah</h3>
+                                <p class="text-gray-600">
+                                    Memperbaiki sistem jual beli tanah (bersertipikat atau yang belum bersertipikat).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-600 hover:border-green-600">
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-yellow-600 font-bold text-xl">10</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Mendata dan Legalisasi Aset
+                                    Pemerintahan Nagari
+                                </h3>
+                                <p class="text-gray-600">
+                                    Mendata dan legalisasi aset aset pemerintahan nagari.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-600 hover:border-yellow-400">
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-green-600 font-bold text-xl">11</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Berupaya Membangun Pondok Pesantren
+                                </h3>
+                                <p class="text-gray-600">
+                                    Berupaya untuk membangun pondok pesantren.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-600 hover:border-green-600">
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-yellow-600 font-bold text-xl">12</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Meningkatkan Sistem dan Fasilitas
+                                    Olahraga
+                                </h3>
+                                <p class="text-gray-600">
+                                    Meningkatkan sistem dan fasilitas olahraga.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-600 hover:border-yellow-400">
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-green-600 font-bold text-xl">13</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Menggali Potensi Nagari untuk Menjadi
+                                    Nagari Mandiri
+                                </h3>
+                                <p class="text-gray-600">
+                                    Menggali potensi nagari untuk menjadi nagari yang mandiri.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-600 hover:border-green-600">
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-yellow-600 font-bold text-xl">14</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-3">Bersikap Terbuka kepada Pendatang</h3>
+                                <p class="text-gray-600">
+                                    Bersikap terbuka kepada pendatang.
                                 </p>
                             </div>
                         </div>
@@ -147,15 +285,17 @@
                 </div>
             </div>
 
-            <!-- Strategi Pencapaian -->
-            <div class="bg-gray-50 rounded-2xl p-8 md:p-12">
+            <!-- Strategi Section -->
+            <div class="bg-gray-50 rounded-2xl p-8 md:p-12 border-b-4 border-transparent hover:border-yellow-400">
                 <div class="text-center mb-8">
                     <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Strategi Pencapaian</h3>
                     <div class="w-20 h-1 bg-green-600 mx-auto"></div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="text-center">
+                    <!-- Strategy cards - hilangkan citation tags -->
+                    <div
+                        class="text-center bg-white p-6 rounded-lg shadow-md border-b-4 border-green-500 hover:border-yellow-500">
                         <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -163,37 +303,91 @@
                                 </path>
                             </svg>
                         </div>
-                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Partisipatif</h4>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Menjadikan Rakyat sebagai Subjek Pembangunan
+                        </h4>
                         <p class="text-gray-600 text-sm">
-                            Melibatkan seluruh elemen masyarakat dalam perencanaan dan pelaksanaan pembangunan
+                            Menjadikan rakyat sebagai subjek pembangunan dan tidak semata-mata menjadi objek pembangunan.
                         </p>
                     </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div
+                        class="text-center bg-white p-6 rounded-lg shadow-md border-b-4 border-yellow-500 hover:border-green-500">
+                        <div class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
                                 </path>
                             </svg>
                         </div>
-                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Berkelanjutan</h4>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Meningkatkan Peran Serta Masyarakat</h4>
                         <p class="text-gray-600 text-sm">
-                            Pembangunan yang memperhatikan aspek sosial, ekonomi, dan lingkungan
+                            Meningkatkan peran serta masyarakat Nagari dalam perencanaan, pelaksanaan, pengendalian dan
+                            pemeliharaan pembangunan.
                         </p>
                     </div>
-                    <div class="text-center">
+                    <div
+                        class="text-center bg-white p-6 rounded-lg shadow-md border-b-4 border-green-500 hover:border-yellow-500">
                         <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Inovatif</h4>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Membangkitkan Daya dan Kemampuan Masyarakat
+                        </h4>
                         <p class="text-gray-600 text-sm">
-                            Menggunakan pendekatan dan teknologi modern untuk efektivitas program
+                            Membangkitkan daya dan kemampuan masyarakat Nagari untuk dapat berusaha sesuai dengan
+                            keterampilan dan dukungan potensi Nagari.
+                        </p>
+                    </div>
+                    <div
+                        class="text-center bg-white p-6 rounded-lg shadow-md border-b-4 border-yellow-500 hover:border-green-500">
+                        <div class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 21H3v-4m0 0l7-7m-7 7h7m0 0V7m0 14h7m0 0l-7-7m7 7V7M3 7v4m0 0L10 4m-7 7H3m0 0v-4m0 0L10 4">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Mewujudkan Pemerintahan Profesional</h4>
+                        <p class="text-gray-600 text-sm">
+                            Mewujudkan Pemerintahan yang profesional sebagai pelayan masyarakat dan bukan sebagai penguasa.
+                        </p>
+                    </div>
+                    <div
+                        class="text-center bg-white p-6 rounded-lg shadow-md border-b-4 border-green-500 hover:border-yellow-500">
+                        <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Meningkatkan Peran Serta Masyarakat Perantau
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                            Meningkatkan peran serta masyarakat perantau untuk menunjang pembangunan Nagari.
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Kebijakan Section -->
+            <div
+                class="bg-white rounded-2xl p-8 md:p-12 shadow-lg border-b-4 border-transparent hover:border-yellow-400 mt-8">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Kebijakan</h3>
+                    <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+                </div>
+
+                <ul class="space-y-6 text-gray-700 text-lg leading-relaxed list-disc pl-5">
+                    <li class="pl-2">Meningkatkan manajemen Pemerintahan Nagari.</li>
+                    <li class="pl-2">Pelaksanaan pembangunan dengan pola pemberdayaan dan partisipasi aktif seluruh
+                        komponen masyarakat dan restrukturisasi manajemen Pemerintahan Nagari.</li>
+                    <li class="pl-2">Restrukturisasi perekonomian masyarakat berbasis ekonomi kerakyatan dengan
+                        memunculkan wilayah pertumbuhan ekonomi dengan tetap menjaga kelestarian sumber daya alam dan
+                        penyehatan lingkungan.</li>
+                    <li class="pl-2">Nilai-nilai agama menjiwa dan mewarnai setiap prilaku dan sikap hidup masyarakat
+                        Nagari di setiap bidang kehidupan.</li>
+                </ul>
             </div>
         </div>
     </div>
